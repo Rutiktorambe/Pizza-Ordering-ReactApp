@@ -10,7 +10,7 @@ const ProductCard = () => {
     // Fetch product details based on the ID from URL
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`/products/${id}`);
+        const res = await fetch(`https://api-bc2h.onrender.com/products/${id}`);
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
