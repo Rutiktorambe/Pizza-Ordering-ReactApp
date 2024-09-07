@@ -19,7 +19,9 @@ const Cart = () => {
       const cartProductIds = Object.keys(cart.items);
       const fetchedProducts = await Promise.all(
         cartProductIds.map(async (id) => {
-          const response = await fetch(`/products/${id}`);
+          const response = await fetch(
+            ` https://api-bc2h.onrender.com/products/${id}`
+          );
           return response.json();
         })
       );
