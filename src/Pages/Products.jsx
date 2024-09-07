@@ -6,7 +6,7 @@ const Products = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://api-bc2h.onrender.com/products")
+    fetch("/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

@@ -2,20 +2,18 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const ProductCard = () => {
-  const { id } = useParams(); // Get the product ID from URL parameters
-  const [product, setProduct] = useState(null);
+  const { id } = useParams();
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch product details based on the ID from URL
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`https://api-bc2h.onrender.com/products/${id}`);
+        const res = await fetch(`/products/${id}`);
         if (!res.ok) {
           throw new Error("Network response was not ok");
         }
         const data = await res.json();
-        setProduct(data); // Assume the response has product details
+        setProduct(data);
       } catch (err) {
         console.error("Error fetching product:", err);
         setError("Failed to fetch product.");
