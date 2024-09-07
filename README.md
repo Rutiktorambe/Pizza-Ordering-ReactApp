@@ -5,7 +5,6 @@ This is a React-based pizza ordering web application, built with Vite and styled
 ## Features
 
 - Browse a list of pizzas with images, names, prices, and ingredients.
-- Search for pizzas by name.
 - View detailed information about each pizza.
 - Add pizzas to the cart and proceed with the checkout process.
 
