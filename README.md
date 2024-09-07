@@ -60,7 +60,7 @@ This project is styled using **Tailwind CSS**, a utility-first CSS framework. No
 
 This React app fetches pizza data from a custom-built API. The API provides information such as pizza name, price, ingredients, and image.
 
-The API repository is available [here](https://github.com/your-username/pizza-api).
+The API repository is available [here](https://github.com/Rutiktorambe/PizzaOrderAPI).
 
 ## Available Scripts
 
