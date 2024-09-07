@@ -5,7 +5,7 @@ import Cart from "./Pages/Cart";
 import ProductCard from "./Pages/ProductCard";
 import OrderConfirmation from "./Pages/OrderConfirmation";
 import { useEffect, useState } from "react";
-import { CartContext } from "./CartContext"; // Correct import
+import { CartContext } from "./CartContext";
 
 const App = () => {
   const [cart, setCart] = useState({});
